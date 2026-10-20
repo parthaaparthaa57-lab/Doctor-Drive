@@ -1,0 +1,20 @@
+:root{--ink:#f4efe2;--panel:rgba(22,26,32,.72);--amber:#ffb000;--teal:#37e0c8}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;background:#9fc5e8;font:15px/1.4 "Segoe UI",system-ui,sans-serif;color:var(--ink);user-select:none;touch-action:none}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+#hud>*{position:fixed;background:var(--panel);border-radius:10px;padding:8px 12px}
+#speed{left:14px;bottom:14px;display:flex;align-items:baseline;gap:6px}#speed b{font-size:44px;font-variant-numeric:tabular-nums;min-width:2.2ch;text-align:right}
+#stats{left:14px;top:14px}#coins,#time{color:var(--amber);font-weight:700}
+#nav{left:50%;top:14px;transform:translateX(-50%);text-align:center}#arrow{font-size:26px;color:var(--teal);transition:transform .08s}
+#btns{right:14px;top:14px;display:flex;gap:6px;flex-wrap:wrap;max-width:60vw;justify-content:flex-end}
+button{font:inherit;color:var(--ink);background:#2c333d;border:1px solid #4a5563;border-radius:8px;padding:6px 10px;cursor:pointer}
+button:hover{border-color:var(--amber)}button:focus-visible{outline:2px solid var(--amber)}
+#pad{display:none;position:fixed;left:0;right:0;bottom:14px;padding:0 14px;justify-content:space-between;pointer-events:none}
+#pad>div{display:flex;gap:10px;pointer-events:auto}#pad button{width:74px;height:74px;font-size:20px;border-radius:50%}
+#pad button.on{background:var(--amber);color:#111}
+@media(pointer:coarse){#pad{display:flex}#speed{bottom:110px}}
+#ov{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(15,18,22,.6)}#ov.hide{display:none}
+#ov>div{background:#1d2229;border:1px solid #3a4452;border-radius:14px;padding:26px 30px;max-width:460px;text-align:center}
+#ov h1{margin:0 0 8px;font-size:30px}#ov p{margin:0 0 18px;white-space:pre-line}
+#ovB{background:var(--amber);color:#111;font-weight:700;border:0;padding:10px 22px;font-size:17px}#ov small{display:block;margin-top:16px;opacity:.65}
+@media(prefers-reduced-motion:reduce){#arrow{transition:none}}

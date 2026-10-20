@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>City Drive 3D</title></head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">
+  <div id="speed"><b id="kmh">0</b><span>km/h</span></div>
+  <div id="stats"><span id="coins">0</span> coins<br><span id="time">120</span> s</div>
+  <div id="nav"><div id="arrow">▲</div><span id="dist"></span></div>
+  <div id="btns">
+    <button id="bPause" title="Pause (P)">Pause</button><button id="bCam" title="Camera (C)">Chase</button>
+    <button id="bMute" title="Mute (M)">Sound on</button><button id="bGfx" title="Graphics (G)">Medium</button>
+    <button id="bRestart" title="Restart (R)">Restart</button>
+  </div>
+</div>
+<div id="pad"><div><button id="tL">◀</button><button id="tR">▶</button></div><div><button id="tB">Brake</button><button id="tG">Gas</button></div></div>
+<div id="ov"><div><h1 id="ovT"></h1><p id="ovP"></p><button id="ovB"></button>
+<small>W/↑ gas · S/↓ brake and reverse · A D/← → steer · Space handbrake · C camera · H horn · P pause · R restart</small></div></div>
+<script type="module" src="/src/main.js"></script>
+</body></html>
